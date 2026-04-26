@@ -1,31 +1,165 @@
+
+
 :root {
     --color-primary-1: #f91155;
     --color-primary-2: #ff4b77;
     --color-primary-3: #d8003f;
     --color-secondary: #3c3e43;
     --color-accent: #ff7647;
+    --text-white: #ffffff;
 
-    --page-bg: linear-gradient(180deg, #4975a1 10%, #4975a1 25%);
+    --bg-gradient-card-shadow: linear-gradient(180deg, rgba(10, 34, 64, 0.1) 0%, #0A2240 100%);
+;
+    --bg-gradient-page: linear-gradient(180deg, rgba(222, 237, 255, 0.6) 0%, rgba(166, 204, 250, 0.5) 100%);
+
+
 
     --font-header: 'Roboto', sans-serif;
     --font-body: 'Open Sans', sans-serif;
 }
 
+.main-title {
+    font-family: var(--font-header);
+    text-transform: uppercase;
+    letter-spacing: 0;
+    line-height: 32px;
+    font-size: 24px;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #000;
+    background-image:
+        var(--bg-gradient-page),
+        url('/img/bg-lines.svg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+.page-container {
+    width: 100%;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .hotel-card__button {
-  background-color: var(--color-primary-1);
-  color: #ffffff;
-  border: none;
-  padding: 12px 25px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: 700;
-  transition: background-color 0.2s ease;
+    width: 100%;
+    background-color: var(--color-primary-1);
+    color: #ffffff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.2s ease;
+    text-align: center;
 }
 
 .hotel-card__button:hover {
-  background-color: var(--color-primary-2);
+    background-color: var(--color-primary-2);
 }
 
 .hotel-card__button:active {
-  background-color: var(--color-primary-3);
+    background-color: var(--color-primary-3);
+}
+
+.hotel-card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+
+    /* Внутренние отступы, чтобы текст не прилипал к краям */
+    padding: 21px; 
+    
+    display: flex;
+    flex-direction: column;
+    /* Это прижмет всё содержимое к низу карточки */
+    justify-content: flex-end;
+    background: var(--bg-gradient-card-shadow);
+}
+
+.hotel-card {
+    position: relative;
+    width: 100%;
+    max-width: 288px;
+    height: 347px;
+    border-radius: 13px;
+    overflow: hidden;
+    display: flex;
+    margin: 0 auto;
+}
+
+.hotel-card__name {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-white);
+    font-size: 20px; 
+    font-weight: 700;
+    margin: 0 0 10px 0; /* Отступ только снизу */
+    line-height: 1.3;
+    letter-spacing: 0;
+    width: 100%;
+    max-width: 246px;
+    text-align: center;
+}
+
+.hotel-card__description {
+    font-family: var(--font-body);
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0 0 20px 0; /* Отступ до блока цены */
+    color: rgba(255, 255, 255, 0.9); /* Чуть прозрачный белый */
+}
+
+.hotel-card__footer {
+    display: flex;
+    flex-direction: column; /* Цена и кнопка друг под другом */
+    gap: 15px; /* Расстояние между ценой и кнопкой */
+}
+
+.hotel-card__price-block {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.hotel-card__price-value {
+    color: var(--color-primary-1);
+    font-weight: 700;
+}
+
+.hotel-card__image-container {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hotel-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cards-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr; /* Одна колонка для мобилок */
+    gap: 20px;
+    justify-items: center; /* Центрируем карточки в сетке */
 }
