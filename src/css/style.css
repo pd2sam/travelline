@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-/* 2. Убираем внешние отступы у всех элементов, которые их имеют по умолчанию */
 body,
 h1,
 h2,
@@ -21,21 +20,18 @@ dd {
     margin: 0;
 }
 
-/* 3. Улучшаем плавность шрифтов (как в Figma) */
 body {
     min-height: 100vh;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
 }
 
-/* 4. Картинки не должны вылезать за пределы контейнеров */
 img,
 picture {
     max-width: 100%;
     display: block;
 }
 
-/* 5. Наследуем шрифты для полей ввода и кнопок (они не наследуют их сами) */
 input,
 button,
 textarea,
@@ -43,7 +39,6 @@ select {
     font: inherit;
 }
 
-/* 6. Убираем стандартное оформление кнопок */
 button {
     padding: 0;
     border: none;
