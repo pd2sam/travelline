@@ -72,7 +72,7 @@ button {
 
 body {
     margin: 0;
-    min-height: 100vh;
+    min-height: 100hv;
     background-color: #000;
     background-image:
         var(--bg-gradient-page),
@@ -84,7 +84,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     min-height: 100vh;
 }
 
@@ -265,17 +265,20 @@ body {
         font-size: 36px;
         line-height: 1.53;
         font-weight: 600;
+        vertical-align: middle;
     }
 
     .hotel-card {
         width: 336px;
         height: 420px;
+        border-radius: 10px;
     }
 
     .cards-grid {
         display: flex;
         flex-wrap: wrap;
-        gap: 28px;
+        row-gap: 37px;
+        column-gap: 28px;
         justify-content: center;
         width: 100%;
         max-width: 700px;
@@ -318,4 +321,46 @@ body {
         font-size: 19px;
         line-height: 1;
     }
+}
+
+@media (min-width: 1280px) {
+    .page-container {
+        justify-content: center;
+        padding: 50px;
+    }
+
+    .main-title {
+        vertical-align: bottom;
+        margin-bottom: 33px;
+        margin-top: auto;
+    }
+
+    .cards-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        justify-content: center;
+        width: 100%;
+        max-width: 1180px;
+        margin: auto;
+    }
+
+    .hotel-card {
+        height: 372px;
+        width: 372px;
+        border-radius: 10px;
+    }
+
+    .hotel-card__footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hotel-card__button {
+        width: 180px;
+        height: 48px;
+    }
+
+    
 }
