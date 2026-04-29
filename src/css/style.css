@@ -259,7 +259,7 @@ body {
 }
 
 .hotel-card__button:hover {
-    background-color: var(--color-primary-2);
+    background-color: var(--color-primary-3);
 }
 
 .hotel-card__button:active {
