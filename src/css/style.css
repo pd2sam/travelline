@@ -117,8 +117,6 @@ body {
     box-sizing: border-box;
 }
 
-.hotel-card__motivator {}
-
 .hotel-card__image-container {
     position: absolute;
     top: 0;
@@ -138,6 +136,7 @@ body {
     bottom: 0;
     background: var(--bg-gradient-card-shadow);
     z-index: 2;
+    display: block;
 }
 
 .hotel-card__image {
