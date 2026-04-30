@@ -84,7 +84,7 @@ body {
 }
 
 .motivator {
-    position: absolute;
+    position: relative;
     top: var(--card-padding);
     left: var(--card-padding);
     z-index: 10;
@@ -100,6 +100,7 @@ body {
     visibility: hidden;
     transition: opacity 0.2s ease;
     max-width: calc(100% - (var(--card-padding) * 2) - 36px);
+    width: max-content;
 }
 
 .motivator::after {
@@ -120,7 +121,7 @@ body {
     font-family: var(--font-header);
     font-weight: 700;
     vertical-align: middle;
-    margin: 0 16px;
+    margin-left: 16px;
     font-size: 14px;
     line-height: 1.5;
 }
