@@ -1,0 +1,54 @@
+{
+  "plugins": ["stylelint-order"],
+  "rules": {
+    "order/properties-order": [
+      [
+        {
+          "emptyLineBefore": "never",
+          "properties": [
+            "position", "top", "right", "bottom", "left", "z-index"
+          ]
+        },
+        {
+          "emptyLineBefore": "never",
+          "properties": [
+            "display", "grid-template-columns", "grid-template-rows", "grid-template-areas", 
+            "grid-area", "gap", "align-items", "justify-content", "flex-direction", 
+            "flex-shrink", "flex-grow", "order", "box-sizing", "width", "min-width", 
+            "max-width", "height", "min-height", "max-height", "margin", "margin-top", 
+            "margin-right", "margin-bottom", "margin-left", "padding", "padding-top", 
+            "padding-right", "padding-bottom", "padding-left", "overflow", "object-fit", 
+            "object-position"
+          ]
+        },
+        {
+          "emptyLineBefore": "never",
+          "properties": [
+            "font", "font-family", "font-size", "font-weight", "line-height", 
+            "text-align", "text-transform", "text-decoration", "letter-spacing", "color"
+          ]
+        },
+        {
+          "emptyLineBefore": "never",
+          "properties": [
+            "background", "background-image", "background-color", "background-position", 
+            "background-repeat", "background-size", "background-attachment", "border", 
+            "border-radius", "border-top-left-radius", "border-bottom-left-radius", "box-shadow"
+          ]
+        },
+        {
+          "emptyLineBefore": "never",
+          "properties": [
+            "transition", "animation", "opacity", "visibility"
+          ]
+        },
+        {
+          "emptyLineBefore": "never",
+          "properties": [
+            "cursor", "pointer-events"
+          ]
+        }
+      ]
+    ]
+  }
+}
