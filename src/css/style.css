@@ -53,8 +53,8 @@ button {
     --card-padding: 21px;
 
 
-    --font-header: 'Roboto', sans-serif;
-    --font-body: 'Open Sans', sans-serif;
+    --font-header: "Roboto", sans-serif;
+    --font-body: "Open Sans", sans-serif;
 }
 
 body {
@@ -62,8 +62,8 @@ body {
     min-height: 100vh;
     background-image:
         var(--bg-gradient-page),
-        url('/img/bg-lines.svg'),
-        linear-gradient(90deg, #F0F0F0 0%, #D4D4D4 100%);
+        url("/img/bg-lines.svg"),
+        linear-gradient(90deg, #f0f0f0 0%, #d4d4d4 100%);
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -109,7 +109,7 @@ body {
     top: 0;
     width: 36px;
     height: 100%;
-    background-image: url('/img/icon-discount.svg'); /* Твой SVG с кружочком */
+    background-image: url("/img/icon-discount.svg");
     background-repeat: no-repeat;
     background-position: left center;
     background-size: contain;
@@ -236,11 +236,11 @@ body {
 }
 
 .hotel-card__name-link:visited {
-    color: #FFFFFF50;
+    color: #ffffff50;
 }
 
 .hotel-card__name-link:active {
-    color: #FFFFFF50;
+    color: #ffffff50;
 }
 
 .hotel-card__description {
@@ -256,7 +256,8 @@ body {
     display: block;
     width: calc(100% - (var(--card-padding, 21px) * 2));
     height: 1px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #ffffff20;
+
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -305,12 +306,19 @@ body {
 .payment-link {
     text-decoration: none;
     color: var(--text-white);
-
-    .accent {
-        color: var(--color-primary-2);
-    }
 }
 
+.accent {
+    color: var(--color-primary-2);
+}
+
+.accent:hover {
+    text-decoration: underline;
+}
+
+.accent:active {
+    color: #ff97b0;
+}
 
 
 .hotel-card__checkbox:checked~.hotel-card__wrapper .hotel-card__footer--default {
@@ -379,7 +387,7 @@ body {
     font-weight: 400;
     font-size: 20px;
     line-height: 1;
-    color: #FFFFFF60;
+    color: #ffffff60;
     vertical-align: middle;
 }
 
@@ -411,7 +419,7 @@ body {
 
 .hotel-card__button:active {
     background-color: var(--color-primary-3);
-    color: #F9637C;
+    color: #f9637c;
 }
 
 
