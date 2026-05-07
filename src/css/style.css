@@ -54,8 +54,8 @@ button {
     --card-padding: 21px;
 
 
-    --font-header: "Roboto", sans-serif;
-    --font-body: "Open Sans", sans-serif;
+    --font-header: "Roboto", Arial, Helvetica, sans-serif;
+    --font-body: "Open Sans", "Segoe UI", Tahoma, sans-serif;
 }
 
 body {
@@ -323,7 +323,6 @@ body {
 
 .hotel-card__button {
     display: flex;
-    align-items: center;
     align-items: center;
     justify-content: center;
     width: 100%;
