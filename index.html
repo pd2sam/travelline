@@ -17,126 +17,134 @@
   <main class="page-container">
     <h1 class="main-title">Номера и цены</h1>
 
-    <div class="cards-grid">
-      <article class="hotel-card">
-        <input class="hotel-card__checkbox" type="checkbox" hidden>
+    <ul class="cards-grid">
+      <li class="cards-grid__item">
+        <article class="hotel-card">
+          <input class="hotel-card__checkbox" type="checkbox" hidden>
 
-        <div class="hotel-card__image-container">
-          <img class="hotel-card__image" src="img/representative-lux.jpg" alt="Представительский люкс">
-        </div>
+          <div class="hotel-card__image-container">
+            <img class="hotel-card__image" src="img/representative-lux.jpg" alt="Представительский люкс">
+          </div>
 
-        <div class="hotel-card__content">
-          <h2 class="hotel-card__name">
-            <a class="hotel-card__name-link" href="#">
-              Представительский люкс
-            </a>
-          </h2>
-          <p class="hotel-card__description">
-            Эксклюзивный номер с панорамным видом на центр города Москвы
-          </p>
-          <div class="hotel-card__line"></div>
-
-          <div class="hotel-card__footer">
-            <div class="hotel-card__default-content">
-              <div class="hotel-card__price-block">
-                <span class="hotel-card__price-label">Цена за сутки</span>
-                <div class="hotel-card__price-value">
-                  <span class="hotel-card__price-prefix">от</span>
-                  <span class="hotel-card__price-number">7 900</span>
-                  <span class="hotel-card__currency">₽</span>
+          <div class="hotel-card__content">
+            <h2 class="hotel-card__name">
+              <a class="hotel-card__name-link" href="#">
+                Представительский люкс
+              </a>
+            </h2>
+            <p class="hotel-card__description">
+              Эксклюзивный номер с панорамным видом на центр города Москвы
+            </p>
+            <div class="hotel-card__footer">
+              <div class="hotel-card__default-content">
+                <div class="hotel-card__price-block">
+                  <span class="hotel-card__price-label">Цена за сутки</span>
+                  <div class="hotel-card__price-value">
+                    <span class="hotel-card__price-prefix">от</span>
+                    <span class="hotel-card__price-number">7 900</span>
+                    <span class="hotel-card__currency">₽</span>
+                  </div>
                 </div>
+                <button class="hotel-card__button" type="button">
+                  Забронировать
+                </button>
               </div>
-              <button class="hotel-card__button" type="button">
-                Забронировать
-              </button>
-            </div>
-            <div class="hotel-card__reserved-content">
-              <p class="hotel-card__reserved-text">Номер зарезервирован </p>
-              <p class="hotel-card__reserved-text">Перейти к <a class="hotel-card__payment-link" href="#">оплате</a></p>
+              <div class="hotel-card__reserved-content">
+                <p class="hotel-card__reserved-text">Номер зарезервирован </p>
+                <p class="hotel-card__reserved-text">Перейти к <a class="hotel-card__payment-link" href="#">оплате</a>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </article>
+        </article>
+      </li>
 
-      <article class="hotel-card">
-        <div class="hotel-card__motivator motivator">
-          <span class="motivator__text">Гарантия лучшей цены!</span>
-        </div>
-        <input class="hotel-card__checkbox" type="checkbox" hidden>
+      <li class="cards-grid__item">
+        <article class="hotel-card">
+          <div class="hotel-card__motivator motivator">
+            <span class="motivator__text">Гарантия лучшей цены!</span>
+          </div>
+          <input class="hotel-card__checkbox" type="checkbox" hidden>
 
-        <div class="hotel-card__image-container">
-          <img class="hotel-card__image" src="img/duplex.jpg" alt="Дуплекс">
-        </div>
+          <div class="hotel-card__image-container">
+            <img class="hotel-card__image" src="img/duplex.jpg" alt="Дуплекс">
+          </div>
 
-        <div class="hotel-card__content">
-          <h2 class="hotel-card__name">
-            <a class="hotel-card__name-link" href="#">Дуплекс</a>
-          </h2>
-          <p class="hotel-card__description">
-            Просторный двухкомнатный номер с шикарным видом на парк
-          </p>
-          <div class="hotel-card__line"></div>
+          <div class="hotel-card__content">
+            <h2 class="hotel-card__name">
+              <a class="hotel-card__name-link" href="#">Дуплекс</a>
+            </h2>
+            <p class="hotel-card__description">
+              Просторный двухкомнатный номер с шикарным видом на парк
+            </p>
+            <div class="hotel-card__line"></div>
 
-          <div class="hotel-card__footer">
-            <div class="hotel-card__default-content">
-              <div class="hotel-card__price-block">
-                <span class="hotel-card__price-label">Цена за сутки</span>
-                <div class="hotel-card__price-value">
-                  <span class="hotel-card__price-prefix">от</span>
-                  <span class="hotel-card__price-number">5 700</span>
-                  <span class="hotel-card__currency">₽</span>
+            <div class="hotel-card__footer">
+              <div class="hotel-card__default-content">
+                <div class="hotel-card__price-block">
+                  <span class="hotel-card__price-label">Цена за сутки</span>
+                  <div class="hotel-card__price-value">
+                    <span class="hotel-card__price-prefix">от</span>
+                    <span class="hotel-card__price-number">5 700</span>
+                    <span class="hotel-card__currency">₽</span>
+                  </div>
                 </div>
+                <button class="hotel-card__button" type="button">
+                  Забронировать
+                </button>
               </div>
-              <button class="hotel-card__button" type="button">
-                Забронировать
-              </button>
-            </div>
-            <div class="hotel-card__reserved-content">
-              <p class="hotel-card__reserved-text">Номер зарезервирован </p>
-              <p class="hotel-card__reserved-text">Перейти к <a class="hotel-card__payment-link" href="#">оплате</a></p>
+              <div class="hotel-card__reserved-content">
+                <p class="hotel-card__reserved-text">Номер зарезервирован </p>
+                <p class="hotel-card__reserved-text">Перейти к <a class="hotel-card__payment-link" href="#">оплате</a>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </article>
+        </article>
+      </li>
 
-      <article class="hotel-card">
-        <input class="hotel-card__checkbox" type="checkbox" hidden>
+      <li class="cards-grid__item">
+        <article class="hotel-card">
+          <input class="hotel-card__checkbox" type="checkbox" hidden>
 
-        <div class="hotel-card__image-container">
-          <img class="hotel-card__image" src="img/business-lux.jpg" alt="Бизнес-люкс">
-        </div>
+          <div class="hotel-card__image-container">
+            <img class="hotel-card__image" src="img/business-lux.jpg" alt="Бизнес-люкс">
+          </div>
 
-        <div class="hotel-card__content">
-          <h2 class="hotel-card__name">
-            <a class="hotel-card__name-link" href="#">Бизнес-люкс</a>
-          </h2>
-          <p class="hotel-card__description">
-            Трёхкомнатный номер с панорамным видом на Москва-реку
-          </p>
-          <div class="hotel-card__line"></div>
+          <div class="hotel-card__content">
+            <h2 class="hotel-card__name">
+              <a class="hotel-card__name-link" href="#">Бизнес-люкс</a>
+            </h2>
+            <p class="hotel-card__description">
+              Трёхкомнатный номер с панорамным видом на Москва-реку
+            </p>
+            <div class="hotel-card__line"></div>
 
-          <div class="hotel-card__footer">
-            <div class="hotel-card__default-content">
-              <div class="hotel-card__price-block">
-                <span class="hotel-card__price-label">Цена за сутки</span>
-                <div class="hotel-card__price-value">
-                  <span class="hotel-card__price-prefix">от</span>
-                  <span class="hotel-card__price-number">4 900</span>
-                  <span class="hotel-card__currency">₽</span>
+            <div class="hotel-card__footer">
+              <div class="hotel-card__default-content">
+                <div class="hotel-card__price-block">
+                  <span class="hotel-card__price-label">Цена за сутки</span>
+                  <div class="hotel-card__price-value">
+                    <span class="hotel-card__price-prefix">от</span>
+                    <span class="hotel-card__price-number">4 900</span>
+                    <span class="hotel-card__currency">₽</span>
+                  </div>
                 </div>
+                <button class="hotel-card__button" type="button">
+                  Забронировать
+                </button>
               </div>
-              <button class="hotel-card__button" type="button">
-                Забронировать
-              </button>
-            </div>
-            <div class="hotel-card__reserved-content">
-              <p class="hotel-card__reserved-text">Номер зарезервирован </p>
-              <p class="hotel-card__reserved-text">Перейти к <a class="hotel-card__payment-link" href="#">оплате</a></p>
+              <div class="hotel-card__reserved-content">
+                <p class="hotel-card__reserved-text">Номер зарезервирован </p>
+                <p class="hotel-card__reserved-text">Перейти к <a class="hotel-card__payment-link" href="#">оплате</a>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </article>
-    </div>
+        </article>
+      </li>
+
+    </ul>
   </main>
   <script type="module" src="./src/main.js"></script>
 </body>
