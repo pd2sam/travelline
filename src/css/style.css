@@ -228,10 +228,12 @@ body {
 }
 
 .hotel-card__name-link:visited {
+    text-decoration: none;
     color: #ffffff50;
 }
 
 .hotel-card__name-link:active {
+    text-decoration: none;
     color: #ffffff50;
 }
 
@@ -356,10 +358,6 @@ body {
     justify-content: center; 
     flex-direction: column; 
     width: 100%; 
-    font-family: var(--font-body); 
-    font-size: 14px; 
-    font-weight: 400; 
-    line-height: 1.5; 
     background-color: var(--color-secondary); 
     opacity: 0; 
     visibility: hidden; 
@@ -391,20 +389,25 @@ body {
     inset: 0;
 }
 
-.payment-link {
-    text-decoration: none;
+.reserved-text {
+    font-family: var(--font-body); 
+    font-size: 14px; 
+    font-weight: 400; 
+    line-height: 1.5; 
     color: var(--text-white);
 }
 
-.accent {
+.payment-link {
+    font-family: inherit;
+    text-decoration: none;
     color: var(--color-primary-2);
 }
 
-.accent:hover {
+.payment-link:hover {
     text-decoration: underline;
 }
 
-.accent:active {
+.payment-link:active {
     color: #ff97b0;
 }
 
