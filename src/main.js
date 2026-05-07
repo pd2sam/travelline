@@ -3,7 +3,7 @@ const cards = document.querySelectorAll(".hotel-card");
 cards.forEach((card) => {
   const checkbox = card.querySelector(".hotel-card__checkbox");
   const btn = card.querySelector(".hotel-card__button");
-  const paymentLink = card.querySelector(".payment-link");
+  const paymentLink = card.querySelector(".hotel-card__payment-link");
 
   btn.addEventListener("click", (e) => {
     e.stopPropagation();
