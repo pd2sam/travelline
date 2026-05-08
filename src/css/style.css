@@ -166,7 +166,6 @@ body {
     visibility: visible;
 }
 
-.hotel-card--selected .motivator,
 .hotel-card--reserved .motivator {
     display: none;
 }
