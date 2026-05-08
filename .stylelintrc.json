@@ -1,6 +1,15 @@
 {
-  "plugins": ["stylelint-order"],
+  "plugins": [
+    "stylelint-order",
+    "@stylistic/stylelint-plugin"
+  ],
   "rules": {
+   "@stylistic/color-hex-case": "lower",
+    "color-hex-length": "long",
+    "unit-no-unknown": true,
+    "length-zero-no-unit": true,
+    "declaration-block-no-duplicate-properties": true,
+    "@stylistic/number-leading-zero": "always",
     "order/properties-order": [
       [
         {

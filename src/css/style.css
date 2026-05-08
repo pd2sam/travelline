@@ -51,8 +51,8 @@ button {
     --color-accent: #ff7647;
     --text-white: #ffffff;
 
-    --bg-gradient-card-shadow: linear-gradient(180deg, rgba(10, 34, 64, 0.1) 0%, #0A2240 100%);
-    --bg-gradient-page: linear-gradient(180deg, rgba(222, 237, 255, 0.6) 0%, rgba(166, 204, 250, 0.5) 100%);
+    --bg-gradient-card-shadow: linear-gradient(180deg, rgba(10, 34, 64, 0.1), #0a2240);
+    --bg-gradient-page: linear-gradient(180deg, rgba(222, 237, 255, 0.6), rgba(166, 204, 250, 0.5));
     --card-padding: 21px;
 
 
@@ -82,7 +82,7 @@ body {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    padding: 0px 16px;
+    padding: 0 16px;
     padding-bottom: 49px;
 }
 
@@ -91,7 +91,7 @@ body {
     font-family: var(--font-header);
     font-size: 24px;
     font-weight: 700;
-    line-height: 1.333;
+    line-height: 1.33;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0;
@@ -116,7 +116,7 @@ body {
     min-height: 347px;
     overflow: hidden;
     color: var(--text-white);
-    background-color: #2D507C;
+    background-color: #2d507c;
     border-radius: 13px;
 }
 
@@ -128,7 +128,7 @@ body {
     display: flex;
     align-items: center;
     width: max-content;
-    max-width: calc(100% - (var(--card-padding) * 2) - 36px);
+    max-width: calc(100% - var(--card-padding) * 2 - 36px);
     min-height: 30px;
     background-color: var(--color-accent);
     border-top-left-radius: 3px;
@@ -348,7 +348,7 @@ body {
 
 .hotel-card__button:hover {
     background-color: var(--color-primary-3);
-    box-shadow: 0px 4px 4px 0px #00000040;
+    box-shadow: 0 4px 4px 0 #00000040;
 
 }
 
@@ -410,7 +410,7 @@ body {
 
 .hotel-card__payment-link:visited {
     text-decoration: none;
-    color: #FF97B0;
+    color: #ff97b0;
 
 }
 
@@ -421,7 +421,7 @@ body {
 
 .hotel-card__payment-link:active {
     text-decoration: none;
-    color: #FF97B0;
+    color: #ff97b0;
 }
 
 
@@ -469,7 +469,7 @@ body {
 
     .hotel-card__name {
         font-size: 24px;
-        line-height: 1.333;
+        line-height: 1.33;
     }
 
     .hotel-card__description {
