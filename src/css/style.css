@@ -116,6 +116,7 @@ body {
     min-height: 347px;
     overflow: hidden;
     color: var(--text-white);
+    background-color: #2D507C;
     border-radius: 13px;
 }
 
