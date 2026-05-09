@@ -296,20 +296,21 @@ body {
 
 .hotel-card__price-value {
     display: flex;
-    gap: 4px;
     align-items: center;
 }
 
 .hotel-card__price-prefix {
+    margin-right: 4px;
     font-family: var(--font-header);
     font-size: 17px;
     font-weight: 700;
-    line-height: 1;
+    line-height: 1.41;
     color: var(--text-white);
     vertical-align: middle;
 }
 
 .hotel-card__price-number {
+    margin-right: 6px;
     font-family: var(--font-header);
     font-size: 20px;
     font-weight: 700;
@@ -493,20 +494,36 @@ body {
         border-radius: 5px;
     }
 
-    .hotel-card__price-value {
-        gap: 6px;
-    }
-
     .hotel-card__price-label {
         font-size: 16px;
         font-weight: 700;
         line-height: 1.5;
     }
 
-    .hotel-card__price-prefix {
-        font-size: 19px;
-        line-height: 1;
+    .hotel-card__price-value {
+        gap: 6px;
     }
+
+    .hotel-card__price-prefix {
+        margin: 0;
+        font-size: 19px;
+        line-height: 1.26;
+    }
+
+    .hotel-card__price-number {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.33;
+    }
+
+    .hotel-card__currency {
+    margin: 0;
+    font-family: var(--font-header);
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 1;
+}
 }
 
 @media (min-width: 1280px) {
@@ -517,8 +534,9 @@ body {
 
     .main-title {
         margin-top: auto;
-        margin-bottom: 33px;
         vertical-align: bottom;
+        font-weight: 500;
+        
     }
 
     .cards-grid {
@@ -539,7 +557,7 @@ body {
 
     .hotel-card__default-content {
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         justify-content: space-between;
         flex-direction: row;
     }
