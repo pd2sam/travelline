@@ -515,6 +515,7 @@ picture {
     }
 
     .hotel-card__price-value {
+        display: flow;
         gap: 6px;
     }
 
