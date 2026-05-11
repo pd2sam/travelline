@@ -268,7 +268,7 @@ picture {
 
 .hotel-card__name,
 .hotel-card__description,
-.hotel-card__default-content {
+.hotel-card__default {
     padding-right: var(--card-padding);
     padding-left: var(--card-padding);
 }
@@ -279,13 +279,13 @@ picture {
     min-height: 150px;
 }
 
-.hotel-card__default-content {
+.hotel-card__default {
     position: relative; 
     display: block;
     padding-bottom: var(--card-padding);
 }
 
-.hotel-card__default-content::before {
+.hotel-card__default::before {
     position: absolute;
     top: 0;
     right: var(--card-padding);
@@ -295,7 +295,7 @@ picture {
     content: "";
 }
 
-.hotel-card__price-block {
+.hotel-card__price {
     margin-top: 18px;
 }
 
@@ -377,7 +377,7 @@ picture {
     background-color: var(--color-primary-3);
 }
 
-.hotel-card__reserved-content {
+.hotel-card__reserved {
     display: none; 
     align-items: center; 
     justify-content: center; 
@@ -389,11 +389,11 @@ picture {
     background-color: var(--color-secondary);
 }
 
-.hotel-card--reserved .hotel-card__default-content {
+.hotel-card--reserved .hotel-card__default {
     display: none;
 }
 
-.hotel-card--reserved .hotel-card__reserved-content {
+.hotel-card--reserved .hotel-card__reserved {
     display: flex;
 }
 
@@ -492,13 +492,13 @@ picture {
 
     .hotel-card__name,
     .hotel-card__description,
-    .hotel-card__default-content {
+    .hotel-card__default {
         padding-right: var(--card-padding);
         padding-left: var(--card-padding);
     }
 
     .hotel-card__footer {
-        min-height: 160px;
+        min-height: 162px;
     }
 
     .hotel-card__button {
@@ -515,6 +515,7 @@ picture {
     }
 
     .hotel-card__price-value {
+        display: flow;
         gap: 6px;
     }
 
@@ -570,10 +571,10 @@ picture {
     }
 
     .hotel-card__footer {
-        min-height: 96px;
+        min-height: 98px;
     }
 
-    .hotel-card__default-content {
+    .hotel-card__default {
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
